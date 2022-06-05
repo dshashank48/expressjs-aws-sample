@@ -1,0 +1,21 @@
+[
+   {
+      "id": 1,
+      "name": "Shashank Dubey",
+      "age": 22,
+      "course": "BCA"
+   },
+   {
+      "id": 2,
+      "name": "Vikas Pandey",
+      "age": 24,
+      "course": "B.sc"
+   },
+   {
+      "id": 3,
+      "name": "Dhananjay Pathak",
+      "age": 25,
+      "course": "MCA"
+   },
+   { "id": 4, "name": "Ankit Kumar", "age": 23, "course": "B.Tech" }
+]

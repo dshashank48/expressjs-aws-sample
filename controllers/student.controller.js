@@ -27,3 +27,16 @@ exports.createStudents = async (req, res) => {
       return res500(res, error);
    }
 };
+
+exports.getStudentById = async (req, res) => {
+   try {
+      const { id } = req.params;
+
+      const student = await StudentSchema.findById(id);
+
+      return res.status(200).json(student);
+   } catch (error) {
+      console.log(error);
+      return res500(res, error);
+   }
+};

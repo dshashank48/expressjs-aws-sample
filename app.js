@@ -25,6 +25,15 @@ app.get("/api", (req, res) => {
    });
 });
 
+app.get("/", (req, res) => {
+   return res.status(200).json({
+      status: "Running",
+      port: process.env.PORT,
+      ip: req.ip,
+      host: req.hostname,
+   });
+});
+
 app.listen(process.env.PORT, () =>
    console.log(`Server is running on localhost at port ${process.env.PORT}`)
 );
